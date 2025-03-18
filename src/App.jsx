@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Login from "./pages/Login.jsx";
+import Login from "./pages/login.jsx";
 import Signin from "./pages/Signin.jsx";
 
 import Landing from "./pages/Landing.jsx";
@@ -15,10 +15,7 @@ function App() {
   return (
     <>
       <Routes>
-      <Route
-          path="/"
-          element={<Login users={users} setUsers={setUsers} />}
-        ></Route>
+      <Route path="/" element={<Login users={users} setUsers={setUsers} />}></Route>
         <Route
           path="/login"
           element={<Login users={users} setUsers={setUsers} />}
