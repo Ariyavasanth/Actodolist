@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function login(props) {
+function Log_in(props) {
   const [inputUsername, setInputUsername] = useState("");
   const [inputPassword, setInputPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false); // 👁 Toggle password visibility
@@ -66,12 +66,12 @@ function login(props) {
         <div className="mt-5 flex flex-col gap-3">
           {/* Username Input */}
           <div className="flex items-center justify-between border border-black rounded-md p-1 w-[fit-content]">
-          <input
-            type="text"
-            onChange={handleUserInput}
-            placeholder="Username"
-            className="w-52 p-1 bg-transparent border  focus:outline-none border-none border-black rounded-md"
-          />
+            <input
+              type="text"
+              onChange={handleUserInput}
+              placeholder="Username"
+              className="w-52 p-1 bg-transparent border  focus:outline-none border-none border-black rounded-md"
+            />
           </div>
 
           {/* Password Input with Show/Hide Toggle */}
@@ -147,4 +147,4 @@ function login(props) {
   );
 }
 
-export default login;
+export default Log_in;
