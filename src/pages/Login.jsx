@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
-function Login(props) {
+function login(props) {
   const [inputUsername, setInputUsername] = useState("");
   const [inputPassword, setInputPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false); // 👁 Toggle password visibility
@@ -147,4 +147,4 @@ function Login(props) {
   );
 }
 
-export default Login;
+export default login;

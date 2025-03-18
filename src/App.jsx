@@ -15,7 +15,10 @@ function App() {
   return (
     <>
       <Routes>
-      <Route path="/" element={<Login users={users} setUsers={setUsers} />}></Route>
+        <Route
+          path="/"
+          element={<Login users={users} setUsers={setUsers} />}
+        ></Route>
         <Route
           path="/login"
           element={<Login users={users} setUsers={setUsers} />}
