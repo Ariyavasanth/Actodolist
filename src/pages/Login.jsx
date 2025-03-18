@@ -65,12 +65,14 @@ function Login(props) {
         {/* Form */}
         <div className="mt-5 flex flex-col gap-3">
           {/* Username Input */}
+          <div className="flex items-center justify-between border border-black rounded-md p-1 w-[fit-content]">
           <input
             type="text"
             onChange={handleUserInput}
             placeholder="Username"
-            className="w-52 p-1 bg-transparent border border-black rounded-md"
+            className="w-52 p-1 bg-transparent border  focus:outline-none border-none border-black rounded-md"
           />
+          </div>
 
           {/* Password Input with Show/Hide Toggle */}
           <div className="flex items-center justify-between border border-black rounded-md p-1 w-[fit-content]">
@@ -80,7 +82,7 @@ function Login(props) {
               placeholder="Password"
               className="w-52 p-1 bg-transparent border-none outline-none"
             />
-            
+
             {/* 👁 Eye Icon to Toggle Password Visibility */}
             <button onClick={() => setShowPassword(!showPassword)}>
               {showPassword ? (
