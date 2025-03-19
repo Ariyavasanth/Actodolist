@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
+
 function Signin(props) {
   const [inputUsername, setUsername] = useState("");
   const [inputPassword, setPassword] = useState("");
@@ -28,7 +29,7 @@ function Signin(props) {
     console.log(users);
 
     setError("");
-    navigate("/login");
+    navigate("/");
   }
 
   return (
@@ -49,7 +50,7 @@ function Signin(props) {
               setError("");
             }}
             placeholder="Username"
-            className="w-52 p-1 bg-transparent outline-none border border-black rounded-md"
+            className="w-[238px] p-2 bg-transparent outline-none border border-black rounded-md"
           />
 
           <div className="flex items-center border border-black rounded-md p-1 w-[fit-content]">
@@ -147,15 +148,15 @@ function Signin(props) {
 
           <button
             onClick={registerUser}
-            className="bg-[#FFC83D] w-52 text-white p-2 rounded-md mt-5"
+            className="bg-[#FFC83D] w-[238px] text-white p-2 rounded-md mt-2"
           >
             Sign in
           </button>
         </div>
 
-        <p>
+        <p className="mt-2">
           Already have an account?{" "}
-          <Link to="/login" className="underline">Login</Link>
+          <Link to="/login" className="underline ">Login</Link>
         </p>
       </div>
     </div>

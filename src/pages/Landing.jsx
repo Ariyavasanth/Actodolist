@@ -7,7 +7,8 @@ import { useLocation } from "react-router-dom";
 
 function Landing() {
     const location = useLocation();
-    const username = location.state.user || "Guest";
+    const username = location.state?.user || "Guest";
+    console.log(username);
   return (
     <div className="bg-black p-7">
     <div className="bg-[#EFEFEF] p-7 border rounded-md">

@@ -25,7 +25,7 @@ function Log_in(props) {
         userFound = true;
         setError(""); // Clear errors
 
-        navigate("/landing", { state: { username: inputUsername } });
+        navigate("/landing", { state: { user: inputUsername } });
       }
     });
 
@@ -70,7 +70,7 @@ function Log_in(props) {
               type="text"
               onChange={handleUserInput}
               placeholder="Username"
-              className="w-52 p-1 bg-transparent border  focus:outline-none border-none border-black rounded-md"
+              className="w-[232px] p-1 bg-transparent border  focus:outline-none border-none border-black rounded-md"
             />
           </div>
 
@@ -129,7 +129,7 @@ function Log_in(props) {
           {/* Login Button */}
           <button
             onClick={checkUser}
-            className="bg-[#8272DA] w-52 text-white p-2 rounded-md mt-5"
+            className="bg-[#8272DA] w-[238px] text-white p-2 rounded-md mt-5"
           >
             Log in
           </button>

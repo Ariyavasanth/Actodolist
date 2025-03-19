@@ -13,7 +13,7 @@ function ToDoList(props)
           {activityArr.length===0?<p>The list is empty</p>:""}
           {
             activityArr.map(function(item,index){
-                return <Todoitem id = {item.id} activity = {item.activity} index={index} activityArr = {activityArr} setactivity = {setactivity} />
+                return <Todoitem key = {item.id} id = {item.id} activity = {item.activity} index={index} activityArr = {activityArr} setactivity = {setactivity} />
             })
           }
         </div>
